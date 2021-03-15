@@ -10,7 +10,7 @@ module Healthcheck
 
     def self.load(config_hash)
       raise Exception.new('Already Configured') if Config.instance.checks.present?
-      Config.instance.checks = config_hash[:checks] 
+      Config.instance.checks = config_hash[:checks]
     end
   end
 end
